@@ -39,9 +39,7 @@
                           $file_ext = explode(".", $file);  //same as line 14, split into 2 section [0] file name, [1] file extension
                           $allowed_ext = array('jpg', 'png');  //only these 2 format is allowed and will be used to display
                           if(in_array($file_ext[1], $allowed_ext))  //if the file extension loaded in for loop matches jpg/png
-                          {  
-                               //$new_name = md5(rand()).'.'.$file_ext;  temporarily disabled, can remove if dont want to use this approach
-                               
+                          {                          
                                # append the $output with html code to display in the html section below dynamically
                                # img src finds the images inside uploads/ExtractedDir/<file>.jpg@png
                                $output .= ' <div class="col-md-6">
@@ -49,13 +47,10 @@
                                                     <img src="uploads/'.$name[0]."/".$file.'" width="170" height="240" /> 
                                                 </div>
                                             </div>';
-                                            
-                               #not sure what 49 and 50 does yet
-                               //copy($path.$name.'/'.$file, $path . $new_name);  this seems like make a copy of the spurce image and renamed it with encrypted name (line 49)
-                               //unlink($upload_dir.$name[0].'/'.$file);  uncomment if you want to delete the original file (youtube code is keep renamed file)
+
                           }       
                      }  
-                     #line 65 and 66 are delete but i might be wrong about the sequence (vice versa), trial and error required
+                     #trial and error: line 65 and 66 are deleted, might be wrong about the sequence (vice versa), 
         	} else {	
         		$message = "There was a problem with the upload. Please try again.";
         	}
@@ -69,7 +64,7 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="Content-Type" />
-<title>Digi-X Internship Assessment</title>
+<title>Digi-X Internship Assessment by Carmen S</title>
 
   <link rel="stylesheet" href="custom.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
@@ -78,8 +73,8 @@
 <section id="head" class="d-flex flex-column justify-content-end align-items-center">
 <h1 class="animate__animated animate__fadeInDown">Upload and share your images.</h1>
 <h2>Fast and easy zip upload.</h3>
-<meta name="description" content="The HTML5 Herald" />
-<meta name="author" content="Digi-X Internship Committee" />
+<meta name="description" content="DX Internship Assessment" />
+<meta name="author" content="Carmen Soo" />
 
 </head>
 </div>

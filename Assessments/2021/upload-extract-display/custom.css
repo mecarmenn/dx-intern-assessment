@@ -1,34 +1,77 @@
 body {
-    padding: 15px;
-    background: #222222;
-    color: #ffffff;
-}
-
-.top-wrapper {
-    padding: 15px;
-    clear: both;
+    padding: 0px;
     width: 100%;
-    height: 70px;
+    overflow: visible;
+    position: relative;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.top-wrapper img {
-    margin-right: 10px;
-    height: 70px;
-    float: left;
+#head {
+  width: 100%;
+  bottom: 8px;
+  right: 8px;
+  padding-bottom: 30px; 
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 
-.top-wrapper h1 {
-    float: left;
+#head .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  height: 70vh;
 }
 
-.instruction-wrapper {
-    padding: 10px;
+#head h1 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
 }
 
-b.yellow {
-    color: yellow;
+#head h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
 }
 
-.display-wrapper {
-    padding: 10px;
+#head p {
+  width: 80%;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#content {
+ margin-top: 90px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#upload{
+  margin-top: 40px;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  background-color: #76ba1b; /* Set a background color */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 40px; /* Increase font size */
+  color: #ffffff;
+  padding: 10px; 
+  margin: 10;
+}
+
+#upload:hover {
+  background-color: #7ec91d; /* Set a background color */
+  padding: 10px; 
 }
